@@ -35,7 +35,7 @@ void loop() {
  
     Serial.print("Distance: ");
     Serial.println(distance);
-  cm = distance;
+    cm = distance;
     cm = map(cm,1,1178,255,1);
         analogWrite(11,cm);
 }
